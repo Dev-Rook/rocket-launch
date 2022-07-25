@@ -55,7 +55,9 @@ const World = () => {
 
             <img src={require('../../Assets/Images/Mountain-BG-3.webp')} alt="" className="Mountain-BG" />
 
-            <img src={require('../../Assets/Images/Ground-Station-2.webp')} alt="" className="Gound-Station" />
+            <img src={require('../../Assets/Images/Ground-Station-2.webp')} alt="" className="Gound-Station-2" />
+
+            <img src={require('../../Assets/Images/Ground-Station-3.webp')} alt="" className="Gound-Station-3" />
 
             <img src={require('../../Assets/Images/Rocket-3.webp')} alt="" className={launch ? "Rocket  Sky-High" : "Rocket"} />
 
