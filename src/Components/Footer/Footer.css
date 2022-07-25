@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Footer-Container {
+    background-color: #c6a16e;
+    
+    display: flex;
+    position: relative;
+
+    padding: 10px;
+
+    margin: auto;
+    margin-top: 0px;
+
+    height: 217px;
+    width: 100%;
+}

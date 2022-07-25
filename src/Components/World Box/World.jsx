@@ -60,14 +60,7 @@ const World = () => {
         });
         sound.play()
     }
-
-
-    const TrippleAction = () => {
-        landRocket();
-        soundCall();
-        SwapText();
-    }
-    
+  
 
 
   return (
@@ -97,7 +90,7 @@ const World = () => {
                         </p>
                     </button>
 
-                    <button onClick={TrippleAction} className='Control-Button Land-Button'>
+                    <button onClick={landRocket} className='Control-Button Land-Button'>
                         <p className="Button-Text">
                             Falcon 2
                         </p>

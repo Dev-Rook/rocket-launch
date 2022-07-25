@@ -7,7 +7,6 @@
 
 
 .World-Box {
-    border: 1px solid black;
     background-color: #efffef;
 
     display: flex;
@@ -26,7 +25,6 @@
 /* SKY BOX ELEMENTS START */
 
 .Sky-Box {
-    border: 1px solid black;
     background-color: #7ab7d6;
 
     position: absolute;
@@ -120,7 +118,7 @@
     flex-direction: column;
 
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 20%;
 
     padding: 10px;
@@ -239,7 +237,6 @@
 
 
 .Ground-Box {
-    border: 1px solid black;
     background-color: #35a967;
 
     position: absolute;
