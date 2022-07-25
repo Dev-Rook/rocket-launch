@@ -57,6 +57,12 @@
     -o-transform: scale(-1, -1);
     -webkit-transform: scale(-1, -1);
     transform: scale(-1, -1);
+
+    transform: .3s;
+}
+
+.Satelite:hover {
+    transform: scale(1.1);
 }
 
 .Satelite-Course {
@@ -117,6 +123,7 @@
 
 .Control-Button:hover {
     transform: translateY(2px);
+    border-left: 4px solid black;
 }
 
 .Land-Button {
@@ -194,12 +201,21 @@
 }
 
 .Launchpad {
-    
     position: absolute;
     top: -100px;
     right: 100px;
 
     height: 150px;
+}
+
+.Rocket {
+    position: absolute;
+    top: -80px;
+    right: 140px;
+
+    height: 100px;
+
+    z-index: 1;
 }
 
 
