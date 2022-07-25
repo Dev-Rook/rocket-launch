@@ -78,7 +78,12 @@ const World = () => {
 
             <img src={require('../../Assets/Images/Satelite-1.webp')} alt="" className="Satelite Satelite-Course" />
 
-            <img src={require('../../Assets/Images/Cloud-1.webp')} alt="" className="Cloud" />
+            <img src={require('../../Assets/Images/Cloud-1.webp')} alt="" className="Cloud Cloud-Course" />
+
+            <img src={require('../../Assets/Images/Cloud-2.webp')} alt="" className="Cloud-2 Cloud-Course-2" />
+
+            
+            <img src={require('../../Assets/Images/Plane-1.webp')} alt="" className="Plane Fly-Plane" />
 
             <div data-aos="fade-right" data-aos-duration="1500" className="Control-Pannel">
                 <p id="Welcome">
@@ -88,7 +93,7 @@ const World = () => {
                 <div className="Button-Container">
                     <button onClick={liftOff} className='Control-Button Launch-Button'>
                         <p onClick={() => soundCall(src)} className="Button-Text">
-                            Launch
+                            Falcon 1
                         </p>
 {/* 
                         <p onClick={""} className="Second-Button-Text">
@@ -98,13 +103,13 @@ const World = () => {
 
                     <button onClick={TrippleAction} className='Control-Button Land-Button'>
                         <p className={swaptext ?"Button-Text Text-Swap-Hide" : "Button-Text"}>
-                            Land
+                            Falcon 2
                         </p>
 
                         
-                        <p onClick={""} className={swaptext ?"Second-Button-Text Text-Swap-Show" : "Second-Button-Text"}>
+                        {/* <p onClick={""} className={swaptext ?"Second-Button-Text Text-Swap-Show" : "Second-Button-Text"}>
                             Launch
-                        </p>
+                        </p> */}
                     </button>
                 </div>
             </div>

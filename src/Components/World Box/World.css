@@ -77,13 +77,40 @@
 .Cloud {
     position: absolute;
     top: 150px;
-    left: 100px;
+    left: -100px;
 
     width: 100px;
 }
 
+.Cloud-2 {
+    position: absolute;
+    top: 200px;
+    right: -100px;
 
+    width: 100px;
+}
+
+.Cloud-Course {
+    animation: Cloud-Track 120s linear infinite both;
+}
+
+.Cloud-Course-2 {
+    animation: Cloud-Track-2 120s linear infinite both;
+}
 /* ☁️ Clouds End ☁️ */
+
+
+.Plane {
+    position: absolute;
+    top: 250px;
+    right: -100px;
+
+    width: 20px;
+}
+
+.Fly-Plane {
+    animation: plane-flies 30s linear 2s infinite both;
+}
 
 
 /* 🎛️ Control Pannel Start 🎛️ */
@@ -178,6 +205,34 @@
     }
     to {
         left: 100%;
+    }
+}
+
+
+@keyframes Cloud-Track {
+    from{
+        left: -100px;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes Cloud-Track-2 {
+    from{
+        right: -100px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes plane-flies {
+    from{
+        right: -100px;
+    }
+    to {
+        right: 100%;
     }
 }
 
