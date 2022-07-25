@@ -21,6 +21,8 @@ const World = () => {
 
             <img src={require('../../Assets/Images/Satelite-1.webp')} alt="" className="Satelite Satelite-Course" />
 
+            <img src={require('../../Assets/Images/Cloud-1.webp')} alt="" className="Cloud" />
+
             <div data-aos="fade-right" data-aos-duration="1000" className="Control-Pannel">
                 <p id="Welcome">
                     Welcome
@@ -43,9 +45,11 @@ const World = () => {
         </div>
 
         <div className="Ground-Box">
-            <div className="Rocket-Platform">
-                <img src={require('../../Assets/Images/Launchpad-1.webp')} alt="" className="Launchpad" />
-            </div>
+
+            <img src={require('../../Assets/Images/Mountain-BG-4.webp')} alt="" className="Mountain-BG" />
+
+
+            <img src={require('../../Assets/Images/Launchpad-1.webp')} alt="" className="Launchpad" />
         </div>
 
     </div>
