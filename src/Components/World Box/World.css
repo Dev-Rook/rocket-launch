@@ -142,12 +142,30 @@
     background-color: red;
 }
 
-#Button-Text {
+.Button-Text {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     font-weight: 500;
 }
+
+.Second-Button-Text {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 500;
+
+    display: none;
+}
+
+.Text-Swap-Hide {
+    display: none;
+}
+
+.Text-Swap-Show {
+    display: block;
+}
+
 
 /* 🎛️ Control Pannel End 🎛️ */
 
@@ -267,7 +285,7 @@
     
     transition: 10s;
 
-    /* transform: scale(.1); */
+    transform: scale(.1);
 }
 
 .Land-Rocket {

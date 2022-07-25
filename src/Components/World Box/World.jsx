@@ -21,6 +21,9 @@ const World = () => {
     const [launch, setLaunch] = useState(false);
     const [land, setLand] = useState(false);
 
+
+    const [swaptext, setSwapText] = useState(false);
+
     // const [lauchCalibrateAudio, setLaunchCalibrateAudio] = useState
 
     const liftOff = () => {
@@ -29,6 +32,10 @@ const World = () => {
 
     const landRocket = () => {
         setLand((prevState) => !prevState)
+    }
+
+    const SwapText = () => {
+        setSwapText((prevState) => !prevState)
     }
 
     const Audios = [
@@ -55,10 +62,11 @@ const World = () => {
     }
 
 
-    // const launchAndSound = () => {
-    //     liftOff();
-    //     sound();
-    // }
+    const TrippleAction = () => {
+        landRocket();
+        soundCall();
+        SwapText();
+    }
     
 
 
@@ -79,14 +87,23 @@ const World = () => {
 
                 <div className="Button-Container">
                     <button onClick={liftOff} className='Control-Button Launch-Button'>
-                        <p onClick={() => soundCall(src)} id="Button-Text">
+                        <p onClick={() => soundCall(src)} className="Button-Text">
                             Launch
                         </p>
+{/* 
+                        <p onClick={""} className="Second-Button-Text">
+                            Launch
+                        </p> */}
                     </button>
 
-                    <button onClick={landRocket} className='Control-Button Land-Button'>
-                        <p id="Button-Text">
+                    <button onClick={TrippleAction} className='Control-Button Land-Button'>
+                        <p className={swaptext ?"Button-Text Text-Swap-Hide" : "Button-Text"}>
                             Land
+                        </p>
+
+                        
+                        <p onClick={""} className={swaptext ?"Second-Button-Text Text-Swap-Show" : "Second-Button-Text"}>
+                            Launch
                         </p>
                     </button>
                 </div>
