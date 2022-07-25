@@ -216,8 +216,20 @@
     height: 100px;
 
     z-index: 1;
+
+    transition: 20s;
 }
 
+.Sky-High {
+    transform: translateY(-1000px) scale(.1);
+    transition-timing-function: ease-out;
+}
+
+
+.Shrink {
+    transition-duration: 10s;
+    transform: scale(.1);
+}
 
 .Launchpad-2 {
     position: absolute;
@@ -228,6 +240,20 @@
 
 }
 
+
+/* Ground Box Keyframe Animation Start */
+
+@keyframes rocket-launch {
+    from{
+        transform: translateY(-80px);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+
+/* Ground Box Keyframe Animation End */
 
 /* GORUND BOX ELEMENTS END */
 

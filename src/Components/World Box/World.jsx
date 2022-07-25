@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import AOS from 'aos'
 import "aos/dist/aos.css";
 
@@ -9,7 +9,14 @@ const World = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
-      }, []);
+    }, []);
+
+
+    const [launch, setLaunch] = useState(false);
+
+    const liftOff = () => {
+        setLaunch((prevState) => !prevState)
+    }
     
 
 
@@ -29,7 +36,7 @@ const World = () => {
                 </p>
 
                 <div className="Button-Container">
-                    <button className='Control-Button Launch-Button'>
+                    <button onClick={liftOff} className='Control-Button Launch-Button'>
                         <p id="Button-Text">
                             Launch
                         </p>
@@ -48,7 +55,7 @@ const World = () => {
 
             <img src={require('../../Assets/Images/Mountain-BG-4.webp')} alt="" className="Mountain-BG" />
 
-            <img src={require('../../Assets/Images/Rocket-3.webp')} alt="" className="Rocket" />
+            <img src={require('../../Assets/Images/Rocket-3.webp')} alt="" className={launch ? "Rocket  Sky-High" : "Rocket"} />
 
             <img src={require('../../Assets/Images/Launchpad-1.webp')} alt="" className="Launchpad-1" />
 
