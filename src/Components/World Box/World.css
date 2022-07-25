@@ -238,7 +238,7 @@
 
 .Sky-High {
     transform: translateY(-1000px) translateX(-500px) rotate(-80deg) scale(.1);
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
 }
 
 
@@ -256,6 +256,26 @@
 
 }
 
+.Lander-Rocket {
+    position: absolute;
+    top: -1000px;
+    left: 70px;
+
+    height: 150px;
+
+    z-index: 1;
+    
+    transition: 10s;
+
+    /* transform: scale(.1); */
+}
+
+.Land-Rocket {
+    transform: translateY(1010px) translateX(00px) rotate(0deg) scale(1);
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
 
 /* Ground Box Keyframe Animation Start */
 
@@ -270,10 +290,10 @@
 
 @keyframes rocket-land {
     from{
-        transform: translateY(-80px);
+        transform: translateY(-1000px);
     }
     to {
-        transform: translateY(100%);
+        transform: translateY(10px);
     }
 }
 

@@ -2,7 +2,13 @@ import React, {useEffect, useState} from 'react'
 import AOS from 'aos'
 import "aos/dist/aos.css";
 
+import {Howl} from 'howler';
+// import ReactHowler from 'ReactHowler'
+
 import './World.css'
+import LaunchCalibrateAudio from '../../Assets/Audio/Loading-Sound-Effect.mp3';
+import ClickAudio from '../../Assets/Audio/Click-Sound-Effect.mp3';
+
 
 const World = () => {
 
@@ -13,10 +19,46 @@ const World = () => {
 
 
     const [launch, setLaunch] = useState(false);
+    const [land, setLand] = useState(false);
+
+    // const [lauchCalibrateAudio, setLaunchCalibrateAudio] = useState
 
     const liftOff = () => {
         setLaunch((prevState) => !prevState)
     }
+
+    const landRocket = () => {
+        setLand((prevState) => !prevState)
+    }
+
+    const Audios = [
+        {
+            sound: LaunchCalibrateAudio,
+            lable: "Launch Calibrate Audio"
+        },
+
+        {
+            sound: ClickAudio,
+            lable: "Click Effect"
+        }
+    ]
+
+    const src = (`https://www.youtube.com/watch?v=TfDIHymqS_w`)
+
+    const soundCall = (src) => {
+        const sound = new Howl({
+            src,
+            html5: true,
+            preload: true,
+        });
+        sound.play()
+    }
+
+
+    // const launchAndSound = () => {
+    //     liftOff();
+    //     sound();
+    // }
     
 
 
@@ -37,12 +79,12 @@ const World = () => {
 
                 <div className="Button-Container">
                     <button onClick={liftOff} className='Control-Button Launch-Button'>
-                        <p id="Button-Text">
+                        <p onClick={() => soundCall(src)} id="Button-Text">
                             Launch
                         </p>
                     </button>
 
-                    <button className='Control-Button Land-Button'>
+                    <button onClick={landRocket} className='Control-Button Land-Button'>
                         <p id="Button-Text">
                             Land
                         </p>
@@ -62,6 +104,10 @@ const World = () => {
             {/* Rockets */}
 
             <img src={require('../../Assets/Images/Rocket-3.webp')} alt="" className={launch ? "Rocket  Sky-High" : "Rocket"} />
+
+            <img src={require('../../Assets/Images/Rocket-3.webp')} alt="" className={land ? "Lander-Rocket  Land-Rocket" : "Lander-Rocket"} />
+
+            {/* Rockets */}
 
             <img src={require('../../Assets/Images/Launchpad-1.webp')} alt="" className="Launchpad-1" />
 
