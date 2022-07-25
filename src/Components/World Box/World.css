@@ -200,7 +200,7 @@
     width: 100%;
 }
 
-.Launchpad {
+.Launchpad-1 {
     position: absolute;
     top: -100px;
     right: 100px;
@@ -216,6 +216,16 @@
     height: 100px;
 
     z-index: 1;
+}
+
+
+.Launchpad-2 {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+
+    height: 200px;
+
 }
 
 

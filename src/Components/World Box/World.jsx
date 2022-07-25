@@ -50,7 +50,9 @@ const World = () => {
 
             <img src={require('../../Assets/Images/Rocket-3.webp')} alt="" className="Rocket" />
 
-            <img src={require('../../Assets/Images/Launchpad-1.webp')} alt="" className="Launchpad" />
+            <img src={require('../../Assets/Images/Launchpad-1.webp')} alt="" className="Launchpad-1" />
+
+            <img src={require('../../Assets/Images/Launchpad-1.webp')} alt="" className="Launchpad-2" />
         </div>
 
     </div>
