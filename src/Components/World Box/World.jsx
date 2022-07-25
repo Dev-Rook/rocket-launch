@@ -95,21 +95,12 @@ const World = () => {
                         <p onClick={() => soundCall(src)} className="Button-Text">
                             Falcon 1
                         </p>
-{/* 
-                        <p onClick={""} className="Second-Button-Text">
-                            Launch
-                        </p> */}
                     </button>
 
                     <button onClick={TrippleAction} className='Control-Button Land-Button'>
                         <p className={swaptext ?"Button-Text Text-Swap-Hide" : "Button-Text"}>
                             Falcon 2
                         </p>
-
-                        
-                        {/* <p onClick={""} className={swaptext ?"Second-Button-Text Text-Swap-Show" : "Second-Button-Text"}>
-                            Launch
-                        </p> */}
                     </button>
                 </div>
             </div>

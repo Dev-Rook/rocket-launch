@@ -16,3 +16,21 @@
     height: 60px;
     width: 100%;
 }
+
+
+.Logo {
+    height: 20px;
+    margin: auto;
+    margin-left: 100px;
+}
+
+.Dropdown-Links { 
+    border: 1px solid black;
+
+    display: flex;
+
+    gap: 30px;
+
+    margin: auto;
+    margin-right: 100px;
+}
