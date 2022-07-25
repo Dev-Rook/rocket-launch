@@ -9,15 +9,19 @@ import './Header.css'
 const Header = () => {
   return (
     <nav className="Nav-Bar">
-      {/* <div className="Logo-Box"> */}
+      <div className="Logo-Box">
         <img src={require('../../Assets/Images/Logo.webp')} alt="" className="Logo" />
-      {/* </div> */}
+        
+        <h1 id="Title">
+          Atomic Rockets
+        </h1>
+      </div>
 
 
       <div className="Dropdown-Links">
         
         <Dropdown className='Drop-Down'>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
+          <Dropdown.Toggle variant="success" id="dropdown-basic" className='Drop-1'>
             History
           </Dropdown.Toggle>
 
@@ -29,7 +33,7 @@ const Header = () => {
         </Dropdown>
 
         <Dropdown className='Drop-Down'>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
+          <Dropdown.Toggle variant="success" id="dropdown-basic" className='Drop-2'>
             Services
           </Dropdown.Toggle>
 
@@ -41,7 +45,7 @@ const Header = () => {
         </Dropdown>
 
         <Dropdown className='Drop-Down'>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
+          <Dropdown.Toggle variant="success" id="dropdown-basic" className='Drop-3'>
             Contact
           </Dropdown.Toggle>
 

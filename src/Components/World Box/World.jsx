@@ -98,7 +98,7 @@ const World = () => {
                     </button>
 
                     <button onClick={TrippleAction} className='Control-Button Land-Button'>
-                        <p className={swaptext ?"Button-Text Text-Swap-Hide" : "Button-Text"}>
+                        <p className="Button-Text">
                             Falcon 2
                         </p>
                     </button>

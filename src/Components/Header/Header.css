@@ -4,6 +4,7 @@
 
 .Nav-Bar {
     border: 1px solid black;
+    background-color: #7fb1fa;
     
     display: flex;
     position: relative;
@@ -17,15 +18,27 @@
     width: 100%;
 }
 
+.Logo-Box {
+    display: flex;
+    gap: 20px;
+}
 
 .Logo {
-    height: 20px;
+    height: 40px;
     margin: auto;
     margin-left: 100px;
 }
 
+#Title {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+
+    margin: auto;
+}
+
 .Dropdown-Links { 
-    border: 1px solid black;
 
     display: flex;
 
@@ -33,4 +46,16 @@
 
     margin: auto;
     margin-right: 100px;
+}
+
+.Drop-1 {
+    background-color: red;
+}
+
+.Drop-2 {
+    background-color: red;
+}
+
+.Drop-3 {
+    background-color: red;
 }
