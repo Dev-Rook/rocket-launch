@@ -43,6 +43,7 @@
     width: 100px;
 }
 
+/* 🛰️ Satelite Start 🛰️ */
 
 .Satelite {
     position: absolute;
@@ -58,8 +59,11 @@
 }
 
 .Satelite-Course {
-    animation: satelite-track 60s linear infinite;
+    animation: satelite-track 60s linear infinite both;
 }
+
+/* 🛰️ Satelite End 🛰️ */
+
 
 
 .Control-Pannel {
@@ -126,3 +130,37 @@
 /* Sky Box Keyframe Animation End */
 
 /* SKY BOX ELEMENTS END */
+
+
+
+
+
+
+
+
+
+
+/* GORUND BOX ELEMENTS START */
+
+
+.Ground-Box {
+    border: 1px solid black;
+    background-color: #35a967;
+
+    position: absolute;
+    bottom: 0px;
+
+    height: 30%;
+    width: 100%;
+}
+
+.Launchpad {
+    display: none;
+}
+
+
+/* GORUND BOX ELEMENTS END */
+
+
+
+

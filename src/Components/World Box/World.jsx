@@ -44,7 +44,7 @@ const World = () => {
 
         <div className="Ground-Box">
             <div className="Rocket-Platform">
-
+                <img src={require('../../Assets/Images/Launchpad-1.webp')} alt="" className="Launchpad" />
             </div>
         </div>
 
