@@ -1,0 +1,18 @@
+
+
+
+
+.Nav-Bar {
+    border: 1px solid black;
+    
+    display: flex;
+    position: relative;
+
+    padding: 10px;
+
+    margin: auto;
+    margin-top: 0px;
+
+    height: 60px;
+    width: 100%;
+}
