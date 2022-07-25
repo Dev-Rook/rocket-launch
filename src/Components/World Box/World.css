@@ -112,14 +112,27 @@
     border-left: 2px solid black;
 
     padding: 8px;
+    transition: .3s;
+}
+
+.Control-Button:hover {
+    transform: translateY(2px);
 }
 
 .Land-Button {
     background-color: #35a967;
 }
 
+.Land-Button:hover {
+    background-color: green;
+}
+
 .Launch-Button {
     background-color: #d95e1c;
+}
+
+.Launch-Button:hover {
+    background-color: red;
 }
 
 #Button-Text {
